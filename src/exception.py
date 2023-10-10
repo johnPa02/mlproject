@@ -4,7 +4,7 @@ def error_message_detail(error, error_detail:sys):
     _, _, tb = sys.exc_info()
     file_name = tb.tb_frame.f_code.co_filename
     line_no = tb.tb_lineno
-    error_message = f"{error} at {file_name} line {line_no}: {error_detail}"
+    error_message = f"{error} at {file_name} line {line_no}"
     return error_message
 
 class CustomException(Exception):
